@@ -11,6 +11,9 @@
     <div class="main1">
     <p>main1</p>
     </div>
+    <div class="main2">
+        <p>main2</p>
+    </div>
 </div>
 <div class="navbar">
     <p id="one">1</p> 
@@ -20,9 +23,19 @@
 <script>
     $(document).ready(function(){
         $("#one").click(function(){
-            $("main1").show()
-            $("main2").hide() <!--animate-->
-            $("main3").hide()
+            $(".main1").fadeIn(slow)
+            $(".main2").hide()
+            $(".main3").hide()
+        })
+        $("#two").click(function(){
+            $(".main1").hide()
+            $(".main2").fadeIn()
+            $(".main3").hide()
+        })
+        $("#three").click(function(){
+            $(".main1").hide()
+            $(".main2").hide()
+            $(".main3").fadeIn()
         })
     })
 </script>
