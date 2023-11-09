@@ -3,12 +3,29 @@
 <title>Fontillas, Melia Resume</title>
 <head>
 <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-<link rel="stylesheet" type="text/css" href="/styles.css">
+<link rel="stylesheet" type="text/css" href="styles.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="main">
-    <p>test</p>
+<div class="container">
+    <div class="main1">
+    <p>main1</p>
+    </div>
 </div>
+<div class="navbar">
+    <p id="one">1</p> 
+    <p id="two">2</p>
+    <p id="three">3</p>
+</div>
+<script>
+    $(document).ready(function(){
+        $("#one").click(function(){
+            $("main1").show()
+            $("main2").hide() <!--animate-->
+            $("main3").hide()
+        })
+    })
+</script>
+<!-- animate color change w new card -->
 </body>
 </html>

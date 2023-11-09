@@ -1,6 +1,43 @@
-.main{
-    border-color: black;
-    height: 25%;
-    width: 50%;
+.container{
+    border: 1px solid black;
+    height: 400px;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: auto;
+    background-color: white;
+}
+.main1{
+    position: absolute;
+    display: block;
+}
+.main2{
+    position: absolute;
+    display: none;
+    background-color: pink;
+}   
+.main3{
+    position: absolute;
+    display: none;
+    background-color: lavenderblush;
+}
+body{
+    height: 90%;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.navbar{
+    position: absolute;
+    bottom: 0px;
+    border: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    line-height: 6pt;
 }
