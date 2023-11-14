@@ -1,4 +1,6 @@
 .container{
+    font-family: monospace;
+    font-size: 11pt;
     border: 1px solid black;
     height: 350px;
     width: 700px;
@@ -7,22 +9,24 @@
     align-items: center;
     margin: auto; */ 
     background-color: white;
-    padding: 20px;
+    padding: 10px;
+    text-overflow: clip;
+    
 }
+
 .main1{
+    text-overflow: clip;
+    padding: 10px;
     position: absolute;
     display: block;
 }
-.main2{
+.main2, .main3{
+    text-overflow: clip;
+    padding: 10px;
     position: absolute;
     display: none;
     background-color: pink;
 }   
-.main3{
-    position: absolute;
-    display: none;
-    background-color: lavenderblush;
-}
 body{
     height: 90%;
     width: 90%;
@@ -50,6 +54,7 @@ body{
     cursor: pointer;
 }
 h{
-    font-size: 25pt;
+    font-size: 20pt;
     font-family: monospace;
+    padding-bottom: 10px;
 }
