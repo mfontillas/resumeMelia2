@@ -18,7 +18,32 @@
     <p>xxxxx@gmail.com</p>
     </div>
     <div class="main2">
-        <h1>xxx</h1>
+        <h class="subh">general</h>
+        <p>Math<br>
+            Cash Handling<br>
+            Customer Service</p>
+           <h class="subh">languages<a id="showfluency" style="font-size: 11pt">&nbsp;show fluency</a></h>
+           <div class="dropSkillBox">
+           <p1 class="eng">English<p1 class="fluency" id="eng">&nbsp;&nbsp;NATIVE</p1></p1>
+           </div>
+           <div class="dropSkillBox">
+           <p1 class="esp">Spanish<p1 class="fluency" id="esp">&nbsp;&nbsp;B2</p1></p1>
+           </div>
+           <h class="subh" id="skillshow">coding</h>
+           <div id="code" class="dropSkill">
+            <div class="dropSkillBox">
+             <p1 class="cpp">C/C++</p1>
+            </div>
+            <div class="dropSkillBox">
+             <p1 class="html">HTML</p1>
+            </div>
+            <div class="dropSkillBox">
+             <p1 class="css">CSS</p1>
+            </div>
+            <div class="dropSkillBox">
+             <p1 class="js">JavaScript</p1>
+            </div>
+           </div>
     </div>
     <div class="main3">
         <p>training</p>
@@ -45,6 +70,9 @@
             $(".main1").hide()
             $(".main2").hide()
             $(".main3").fadeIn()
+        })
+        $("#showfluency").on("click", function(){
+        $(".fluency").toggle()
         })
     })
 </script>

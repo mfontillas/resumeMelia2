@@ -10,18 +10,15 @@
     margin: auto; */ 
     background-color: white;
     padding: 10px;
-    text-overflow: clip;
     
 }
 
 .main1{
-    text-overflow: clip;
     padding: 10px;
     position: absolute;
     display: block;
 }
 .main2, .main3{
-    text-overflow: clip;
     padding: 10px;
     position: absolute;
     display: none;
@@ -57,8 +54,102 @@ h{
     font-family: monospace;
     padding-bottom: 10px;
 }
-.h1{
+.subh{
     font-size: 15pt;
     font-family: monospace;
     padding-bottom: 10px;
+}
+.skillcontainer{
+    height: 75%;
+    width: 50%;
+}
+.skillText{
+    font-size: 11pt;
+    display: inline-block;
+    }
+    a:hover{
+      cursor: pointer;
+    }
+    .dropSkillBox{
+      margin: auto;
+      height: auto;
+      width: 90%;
+      margin-bottom: 5px;
+      box-shadow: 0px 0px 0px 1px black inset;
+    }
+    .html{
+      font-size: 11pt;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      display: inline-block;
+      color: white;
+      height: 13pt;
+      width: 70%;
+      background-color: black;
+      /* margin-left: -7px; */
+      padding-left: 5%;
+    }
+    .cpp{
+      font-size: 11pt;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      display: inline-block;
+      color: white;
+      height: 13pt;
+      width: 90%;
+      background-color: black;
+      /* margin-left: -7px; */
+      padding-left: 5%;
+    }
+    .css{
+      font-size: 11pt;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      display: inline-block;
+      color: white;
+      height: 13pt;
+      width: 70%;
+      background-color: black;
+      /* margin-left: -7px; */
+      padding-left: 5%;
+    }
+    .js{
+      font-size: 11pt;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      display: inline-block;
+      color: white;
+      height: 13pt;
+      width: 50%;
+      background-color: black;
+      /* margin-left: -7px; */
+      padding-left: 5%;
+    }
+    .eng{
+      font-size: 11pt;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      display: inline-block;
+      color: white;
+      height: 13pt;
+      width: 95%;
+      background-color: black;
+      /* margin-left: -7px; */
+      padding-left: 5%;
+    }
+    .esp{
+      font-size: 11pt;
+      padding-top: 0px;
+      padding-bottom: 0px;
+      display: inline-block;
+      color: white;
+      height: 13pt;
+      width: 65%;
+      background-color: black;
+      /* margin-left: -7px; */
+      padding-left: 5%;
+    }
+p1{
+    padding: 0px;
+    display: inline-block;
 }
