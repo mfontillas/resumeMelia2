@@ -1,13 +1,13 @@
 .container{
     border: 1px solid black;
-    height: 400px;
+    height: 350px;
     width: 700px;
     /* display: flex; 
     justify-content: center;
     align-items: center;
     margin: auto; */ 
     background-color: white;
-    padding-left: 10px;
+    padding: 20px;
 }
 .main1{
     position: absolute;
@@ -46,12 +46,10 @@ body{
     padding-left: 10px;
     padding-right: 10px;
 }
-
 .navbuttons:hover{
     cursor: pointer;
 }
-
 h{
-    line-height: 1.5;
-    font-size: x-large;
+    font-size: 25pt;
+    font-family: monospace;
 }
