@@ -11,6 +11,7 @@
   background-color: white;
   padding: 10px;
   position: relative;
+  background: rgba(255,255,255, 0.65);
   
 }
 .main1{
@@ -39,6 +40,8 @@ body{
   align-items: center;
   margin: auto;
   font-family: monospace;
+  background: rgb(138,110,64);
+background: radial-gradient(circle, rgba(138,110,64,1) 0%, rgba(188,164,127,1) 44%, rgba(224,204,174,1) 71%, rgba(245,227,200,1) 100%);
 }
 .navbar{
   position: absolute;
@@ -50,6 +53,7 @@ body{
   align-items: center;
   margin: auto;
   line-height: 6pt;
+  background: rgba(255,255,255, 0.65);
 }
 .navbuttons{
   padding-left: 10px;
