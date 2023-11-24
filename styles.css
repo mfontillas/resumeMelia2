@@ -160,9 +160,6 @@ p1{
 }
 .links{
   display: flex;
-  position: absolute;
-  bottom: 0px;
-  justify-content: center;
-  width: 100%;
-  text-align: center; 
+  margin-left: -5px;
+  text-decoration: underline;
 }
