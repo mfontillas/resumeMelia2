@@ -7,6 +7,9 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
+<div class="topnav">
+    <p class="topnavbuttons2" id="theme">theme</p>
+</div>
 <div class="container">
     <div class="main1">
     <h>Melia Fontillas Ronk</h>
@@ -19,7 +22,7 @@
     <p>xxxxx@gmail.com</p>
     <br>
     <div class="links">
-        <p style="padding:5px;" href="https://github.com/mfontillas">github</p><p style="padding:5px;" href="https://instagram.com/">instagram</p><p style="padding:5px;">linkedin</p>
+        <a style="padding:5px;" href="https://github.com/mfontillas">github</a><a style="padding:5px;" href="https://instagram.com/">instagram</a><a style="padding:5px;">linkedin</a>
     </div>
     </div>
     <div class="main2">
@@ -80,6 +83,9 @@
         })
         $("#showfluency").on("click", function(){
         $(".fluency").toggle()
+        })
+        $("#home").on("click", function(){
+            //i wanna make dark mode but im so tired brah
         })
     })
 </script>
