@@ -4,28 +4,43 @@
   border: 1px solid black;
   height: 350px;
   width: 700px;
-  /* display: flex; 
-  justify-content: center;
-  align-items: center;
-  margin: auto; */ 
   background-color: white;
   padding: 10px;
   position: relative;
+  display: flexbox;
+  clear: both;
   background: rgba(255,255,255, 0.65);
   overflow: scroll;
-  
+}
+.innercontainer{
+  width: 45%;
+  display: flexbox;
+  padding: 15px;
+}
+#left{
+  float: left;
+}
+
+#right{
+  float: right;
+
+}
+.imgplaceholder{
+  background-color: lightgray;
+  color:gray;
+  border: solid 1px gray;
+  text-align: center;
+  height: 310px;
+  object-fit: cover;
 }
 .main1{
-  padding: 15px;
   position: absolute;
-  display: block;
   top: 0px;
   bottom: 0px;
   left: 0px;
   right: 0px;
 }
 .main2, .main3{
-  padding: 15px;
   position: absolute;
   display: none;
   top: 0px;
@@ -180,13 +195,34 @@ p1{
     padding: 0px;
     display: inline-block;
 }
-.links{
-  display: flex;
-  margin-left: -5px;
-  text-decoration: underline;
+#date{
+  font-size: 10px;
+  color: grey;
+  line-height: 0.5;
 }
 
+.links{
+  text-decoration: underline;
+
+}
 a, a:visited{
   color: black;
 }
-
+#one{
+  text-decoration: underline;
+}
+#showfluency{
+  padding-left: 5px;
+  text-decoration: underline;
+}
+.flexfix{
+ display: flex;
+ padding: none;
+}
+#dropdown1, #dropdown2{
+  display: none;
+}
+.expo{
+  line-height: 0.5;
+  padding-top: 5px;
+}

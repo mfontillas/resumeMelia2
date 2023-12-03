@@ -7,56 +7,118 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-<div class="topnav">
+<!-- <div class="topnav">
     <p class="topnavbuttons2" id="theme">theme</p>
-</div>
+</div> -->
 <div class="container">
     <div class="main1">
+    <div class="innercontainer" id="left">
     <h>Melia Fontillas Ronk</h>
     <br>
     <br>
     <p>hardworking, ambitious, and personable student</p>
-    <p> quick thinker, problem solver, and collaborator</p>
+    <p>quick thinker, problem solver, and collaborator</p>
     <br>
-    <p>los ANGELES, ca</p>
+    <p>los angeles, ca</p>
     <p>xxxxx@gmail.com</p>
     <br>
     <div class="links">
-        <a style="padding:5px;" href="https://github.com/mfontillas">github</a><a style="padding:5px;" href="https://instagram.com/">instagram</a><a style="padding:5px;">linkedin</a>
+        <a style="padding:5px;" href="https://github.com/mfontillas">github</a><a style="padding:5px;" href="https://instagram.com/">instagram</a><a style="padding:5px;" href="https://www.linkedin.com/">linkedin</a>
+    </div>
+    </div>
+    <div class="innercontainer" id="right">
+        <img src="https://as2.ftcdn.net/v2/jpg/02/17/34/67/1000_F_217346782_7XpCTt8bLNJqvVAaDZJwvZjm0epQmj6j.jpg" class="imgplaceholder">
     </div>
     </div>
     <div class="main2">
+        <div class="innercontainer" id="left">
         <h class="subh">general</h>
         <p>math<br>
             cash handling<br>
             customer service</p>
-           <h class="subh">languages<a id="showfluency" style="font-size: 11pt;">&nbsp;show fluency</a></h>
+           <h class="subh">languages</h><a id="showfluency" style="font-size: 11pt;">show fluency</a>
            <div class="skillcontainer">
            <div class="dropSkillBox">
-           <p1 class="eng">english<p1 class="fluency" style="display:none;" id="eng">&nbsp;&nbsp;NATIVE</p1></p1>
+           <p1 class="eng">&nbsp;english<p1 class="fluency" style="display:none;" id="eng">&nbsp;&nbsp;NATIVE</p1></p1>
            </div>
            <div class="dropSkillBox">
-           <p1 class="esp">spanish<p1 class="fluency" style="display:none;" id="esp">&nbsp;&nbsp;B2</p1></p1>
+           <p1 class="esp">&nbsp;spanish<p1 class="fluency" style="display:none;" id="esp">&nbsp;&nbsp;B2</p1></p1>
            </div>
            </div>
            <h class="subh" id="skillshow">coding</h>
            <div class="skillcontainer">
             <div class="dropSkillBox">
-             <p1 class="cpp">c/c++</p1>
+             <p1 class="cpp">&nbsp;c/c++</p1>
             </div>
             <div class="dropSkillBox">
-             <p1 class="html">html</p1>
+             <p1 class="html">&nbsp;html</p1>
             </div>
             <div class="dropSkillBox">
-             <p1 class="css">css</p1>
+             <p1 class="css">&nbsp;css</p1>
             </div>
             <div class="dropSkillBox">
-             <p1 class="js">javascript</p1>
+             <p1 class="js">&nbsp;javascript</p1>
             </div>
             </div>
+        </div>
+        <div class="innercontainer" id="right"> 
+            <h class="subh">experience</h>
+            <br>
+            <div class="expo">
+            <p id="expo1">los angeles public library</p>
+            <div class="flexfix">
+            <div id="dropdown1">
+                <p id="date">xx/22-xx/23</p>
+                <p>position/skills practice etc etc etc</p>
+            </div>
+            </div>
+            <div class="expo">
+                <p id="expo2">job expo2</p>
+                <div class="flexfix">
+                <div id="dropdown2">
+                    <p id="date">xx/22-xx/23</p>
+                    <p>position/skills practice etc etc etc</p>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="main3">
-        <p>training</p>
+        <div class="innercontainer" id="left">
+            <h class="subh">training</h>
+            <p>
+            <a href="https://www.redcross.org/take-a-class/qrcode?certnumber=00VHOA5">red cross</a>
+            </p>
+            <br>
+            <br>
+            <p>
+            <a href="https://www.redcross.org/take-a-class/qrcode?certnumber=00VHOA5">any</a>
+            </p>
+            <br>
+            <br>
+            <p>
+            <a href="https://www.redcross.org/take-a-class/qrcode?certnumber=00VHOA5">other</a>
+            </p>
+            <br>
+            <br>
+            <p>
+            <a href="https://www.redcross.org/take-a-class/qrcode?certnumber=00VHOA5">training</a>
+            </p>
+        </div> 
+        <div class="innercontainer" id="right">
+            <h class="subh">certifications</h>
+            <p>
+            <a href="https://www.redcross.org/take-a-class/qrcode?certnumber=00VHOA5">certifications</a>
+            </p>
+            <br>
+            <br>
+            <p>
+            <a href="https://www.redcross.org/take-a-class/qrcode?certnumber=00VHOA5">here</a>
+            </p>
+            <br>
+            <br>
+        </div>
     </div>
 </div>
 <div class="navbar">
@@ -70,22 +132,38 @@
             $(".main1").fadeIn()
             $(".main2").hide()
             $(".main3").hide()
+            $("#one").css("text-decoration", "underline")
+            $("#two").css("text-decoration", "none")
+            $("#three").css("text-decoration", "none")
+
         })
         $("#two").click(function(){
             $(".main1").hide()
             $(".main2").fadeIn()
             $(".main3").hide()
+            $("#one").css("text-decoration", "none")
+            $("#two").css("text-decoration", "underline")
+            $("#three").css("text-decoration", "none")
         })
         $("#three").click(function(){
             $(".main1").hide()
             $(".main2").hide()
             $(".main3").fadeIn()
+            $("#one").css("text-decoration", "none")
+            $("#two").css("text-decoration", "none")
+            $("#three").css("text-decoration", "underline")
         })
         $("#showfluency").on("click", function(){
         $(".fluency").toggle()
         })
-        $("#home").on("click", function(){
-            //i wanna make dark mode but im so tired brah
+        // $("#home").on("click", function(){
+        //     //i wanna make dark mode but im so tired... 12/01/23
+        // })
+        $("#expo1").on("click", function(){
+            $("#dropdown1").slideToggle("slow")
+        })
+        $("#expo2").on("click", function(){
+            $("#dropdown2").slideToggle("slow")
         })
     })
 </script>
